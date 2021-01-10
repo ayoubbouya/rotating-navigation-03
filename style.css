@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+
+    box-sizing: border-box;
+     
+}
+body{
+    font-family: 'Roboto', sans-serif;
+     overflow: hidden-x;
+     margin: 0;
+     background-color: #333;
+     color: #222;
+}
+
+.container {
+    background-color: #fafafa;
+    width: 100vw;
+    min-height: 100vh;
+    transform-origin: top left;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    padding: 50px;
+    
+
+}
+
+.container.show-nav {
+    
+        animation-name: changerotate;
+}
+
+
+@keyframes changerotate {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(-20deg);
+    }
+  }
+
+  .container-circle {
+      position: fixed;
+      top: -100px;
+      left: -100px;
+
+  }
+
+  .circle {
+      background-color: #A1AD19;
+      position: relative;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+
+  }
+  .circle button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 90px;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+  }
+
+  .circle button:focus {
+      outline: none;
+  }
+
+  .circle button#open{
+      left: 65%;
+  }
+
+  .circle button#close{
+    top: 65%;
+    transform: rotate(90deg);
+    transform-origin: top left ;
+}
+
+.content img {
+    max-width: 100%;
+} 
+
+.content p {
+    text-align: justify;
+}
