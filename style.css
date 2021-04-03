@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
 *{
-
     box-sizing: border-box;
-     
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -12,7 +9,6 @@ body{
      background-color: #333;
      color: #222;
 }
-
 .container {
     background-color: #fafafa;
     transform-origin: top left;
@@ -21,17 +17,14 @@ body{
     min-height: 100vh;
     padding: 50px;
   }
-  
   .container.show-nav {
     transform: rotate(-20deg);
   }
-  
   .circle-container {
     position: fixed;
     top: -100px;
     left: -100px;
   }
-  
   .circle {
     background-color: #8DA338;
     height: 200px;
@@ -40,11 +33,9 @@ body{
     position: relative;
     transition: transform 0.5s linear;
   }
-  
   .container.show-nav .circle {
     transform: rotate(-70deg);
   }
-  
   .circle button {
     cursor: pointer;
     position: absolute;
